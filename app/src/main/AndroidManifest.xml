@@ -24,6 +24,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.gmail.prototype1.chataf.home" />
         </activity>
+        <activity android:name=".chat_main"/>
     </application>
+
 
 </manifest>

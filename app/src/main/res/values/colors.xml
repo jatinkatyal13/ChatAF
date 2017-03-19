@@ -8,7 +8,7 @@
     <color name="navigationBarColor">#000000</color>
     <color name="colorAccent1">#c8e8ff</color>
     <!--tabbed view ends here-->
-    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimary">#3f51b5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <!--Screens Background Color-->

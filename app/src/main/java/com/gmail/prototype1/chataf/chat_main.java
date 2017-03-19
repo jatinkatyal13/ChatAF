@@ -6,7 +6,7 @@ import android.support.v7.widget.Toolbar;
 
 /**
  * Created by Akshit on 3/10/2017.
- */
+**/
 
 public class chat_main extends AppCompatActivity {
     private Toolbar toolbar;

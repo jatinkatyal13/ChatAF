@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.gmail.prototype1.chataf">
 
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -24,8 +30,17 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.gmail.prototype1.chataf.home" />
         </activity>
-        <activity android:name=".chat_main"/>
+        <activity android:name=".chat_main"
+            android:parentActivityName=".home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gmail.prototype1.chataf.home"/>
+        </activity>
+        <activity android:enabled="true"  android:name=".WifiChatActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <service android:enabled="true" android:name=".ChatService" />
     </application>
+
+
 
 
 </manifest>

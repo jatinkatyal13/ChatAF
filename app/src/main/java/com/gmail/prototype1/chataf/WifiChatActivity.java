@@ -32,7 +32,7 @@ public class WifiChatActivity extends AppCompatActivity {
     ScrollView scrollView;
     Intent intent;
     View root;
-    AddressUtility addressUtility = new AddressUtility();
+    //AddressUtility addressUtility = new AddressUtility();
     static ArrayList<CharSequence> users = new ArrayList();
     static ArrayList<String> userAddress = new ArrayList();
     static String userName = "Placeholder";
@@ -46,7 +46,7 @@ public class WifiChatActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.chat_main);
-        addressUtility.setdomain(this);
+        //addressUtility.setdomain(this);
         //sel1 = (Button) findViewById(R.id.button1);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
